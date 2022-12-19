@@ -3,6 +3,25 @@ let inputN = document.getElementById('numbersInput');
 let inputC = document.getElementById('numberRes');
 
 
+
+const hasnumbr = () =>{
+    const but = document.getElementById('potencia');
+    const but2 = document.getElementById('residuo');
+    const but3 = document.getElementById('raiz');
+    const but4 = document.getElementById('dividir');
+    const but5 = document.getElementById('multiplicar');
+    const but6 = document.getElementById('menos');
+    const but7 = document.getElementById('sumar');
+    but.disabled= true;
+    but2.disabled= true;
+    but3.disabled= true;
+    but4.disabled= true;
+    but5.disabled= true;
+    but6.disabled= true;
+    but7.disabled= true;
+    console.log("jalo");
+}
+
 valor = (val) =>{
     let res = inputN.textContent =inputN.textContent + val;
 }
@@ -65,71 +84,71 @@ const convertirValor = () => {
         console.log('tiene punto');
         if(datoOperacion.includes('+')){
             const operatF = new Operacion(datoResF,datoOperacionF);
-            inputC.textContent = (operatF.sumar());
-            inputN.textContent = "";
+            inputC.textContent = "";
+            inputN.textContent = (operatF.sumar());            
         }else if (datoOperacion.includes('-')){
             const operatF = new Operacion(datoResF,datoOperacionF);
-            inputC.textContent = (operatF.resta());
-            inputN.textContent = "";
+            inputC.textContent = "";
+            inputN.textContent = (operatF.resta());
         }else if (datoOperacion.includes('*')){
             const operatF = new Operacion(datoResF,datoOperacionF);
-            inputC.textContent = (operatF.multiplicacion());
-            inputN.textContent = "";
+            inputC.textContent = "";
+            inputN.textContent = (operatF.multiplicacion());            
         }else if (datoOperacion.includes('/')){
             const operatF = new Operacion(datoResF,datoOperacionF);
-            inputC.textContent = (operatF.divicion());
-            inputN.textContent = "";
+            inputC.textContent = "";
+            inputN.textContent = (operatF.divicion());
         }else if (datoOperacion.includes('√')){
             const operatF = new Operacion(datoResF,datoOperacionF);
-            inputC.textContent = (operatF.raizC());
-            inputN.textContent = "";
+            inputC.textContent = "";
+            inputN.textContent = (operatF.raizC());
         }else if (datoOperacion.includes('^')){
             const operatF = new Operacion(datoResF,datoOperacionF);
-            inputC.textContent = (operatF.potencia());
-            inputN.textContent = "";
+            inputC.textContent = "";
+            inputN.textContent = (operatF.potencia());
         }else if (datoOperacion.includes('%')){
             const operatF = new Operacion(datoResF,datoOperacionF);
-            inputC.textContent = (operatF.residuoDiv());
-            inputN.textContent = "";
+            inputC.textContent = "";
+            inputN.textContent = (operatF.residuoDiv());
         }                 
     }else   {
         let datoOperacionI = parseInt(datoRes);
         let datoResI = parseInt(datoOperacion);
-        if(datoOperacion.includes('+')){
-            const operatI = new Operacion(datoResI,datoOperacionI);
             if(datoOperacion.includes('+')){
                 const operatI = new Operacion(datoResI,datoOperacionI);
-                inputC.textContent = (operatI.sumar());
-                inputN.textContent = "";
+                inputC.textContent = "";
+                inputN.textContent = (operatI.sumar());
             }else if (datoOperacion.includes('-')){
                 const operatI = new Operacion(datoResI,datoOperacionI);
-                inputC.textContent = (operatI.resta());
-                inputN.textContent = "";
+                inputC.textContent = "";
+                inputN.textContent = (operatI.resta());
             }else if (datoOperacion.includes('*')){
                 const operatI = new Operacion(datoResI,datoOperacionI);
-                inputC.textContent = (operatI.multiplicacion());
-                inputN.textContent = "";
+                inputC.textContent = "";
+                inputN.textContent = (operatI.multiplicacion());                
             }else if (datoOperacion.includes('/')){
                 const operatI = new Operacion(datoResI,datoOperacionI);
-                inputC.textContent = (operatI.divicion());
-                inputN.textContent = "";
+                inputC.textContent = "";
+                inputN.textContent = (operatI.divicion());                
             }else if (datoOperacion.includes('√')){
                 const operatI = new Operacion(datoResI,datoOperacionI);
-                inputC.textContent = (operatI.raizC());
-                inputN.textContent = "";
+                inputC.textContent = "";
+                inputN.textContent = (operatI.raizC());                
             }else if (datoOperacion.includes('^')){
                 const operatI = new Operacion(datoResI,datoOperacionI);
-                inputC.textContent = (operatI.potencia());
-                inputN.textContent = "";
+                inputC.textContent = "";
+                inputN.textContent = (operatI.potencia());                
             }else if (datoOperacion.includes('%')){
                 const operatI = new Operacion(datoResI,datoOperacionI);
-                inputC.textContent = (operatI.residuoDiv());
-                inputN.textContent = "";
+                inputC.textContent = "";
+                inputN.textContent = (operatI.residuoDiv());                
             }                 
         }
     }
-}
 
+
+
+    
 
 const potencia = () =>{
     valor("^");
@@ -225,4 +244,5 @@ const resultado = () =>{
 const sumar = () =>{
     valor("+");
     selectOperation();
+    
 }

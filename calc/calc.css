@@ -1,19 +1,43 @@
 html{
-    background-color: #0d1321;
+    background-color: #535a5e;
     display: grid;
     place-items: center;
 }
 
 .base{
-    width: 350px;
-    height: 600px;
-    background-color: #52585c;
+    width: 400px;
+    height: 690px;
+    background-color: black;
+}
+.kasio{
+    position: relative;
+    left: 25px;
+    color: #d7d6d1;
+}
+
+
+.calcData{
+    color: #d7d6d1;
+    position: relative;
+    left: 25px;
+    bottom: 5px;
+    font-size: small;
+}
+
+.model{
+    color: #d7d6d1;
+    position: relative;
+    left: 25px;
+    bottom: 20px;
+    font-size: small
 }
 
 .base1{
+    position: relative;
+    left: 25px;
     width: 350px;
     height: 600px;
-    background-color: #52585c;
+    bottom: 30px;
 }
 
 .screen{
@@ -22,24 +46,24 @@ html{
     align-items: flex-end;
     width: 350px;
     height: 160px;
-    background-color: #2b2d42;
+    background-color: #96ab9f;
 }
 
 .numerosRes{
     display: flex;
     align-items: flex-end;
-    background-color: #2b2d42;
+    background-color: #96ab9f;
     font-size: large;
     max-width: 200px;
     height: 70px;
     color: white;
-
 }
+
 
 .numeros{
     display: flex;
     align-items: flex-end;
-    background-color: #2b2d42;
+    background-color: #96ab9f;
     font-size: large;
     position: relative;
     max-width: 200px;
@@ -47,10 +71,11 @@ html{
     color: white;
 }
 
+
 .addNumeros{
     display: flex;
     align-items: flex-end;
-    background-color: gray;
+    background-color: #252422;
     font-size: large;
     width: 20px;
     height: 70px;
@@ -60,15 +85,79 @@ html{
 }
 
 .baseOfAll{
+    position: relative;
     width: 350px;
     height: 440px;
     background-color: #252422;
     display: flex;
     flex-flow: row wrap;
-
 }
 
 button{
     width: 86px;
     height: 87px;
+    background-color: #232628;
+    color: white;
+    border: none;
+}
+
+.raiz:hover{
+    background-color: #323639;
+}
+.residuo:hover{
+    background-color: #323639;
+}
+.potencia:hover{
+    background-color: #323639;
+}
+.delete1:hover{
+    background-color: #323639;
+}
+.siete:hover{
+    background-color: #323639;
+}
+.ocho:hover{
+    background-color: #323639;
+}
+.nueve:hover{
+    background-color: #323639;
+}
+.cuatro:hover{
+    background-color: #323639;
+}
+.cinco:hover{
+    background-color: #323639;
+}
+.seis:hover{
+    background-color: #323639;
+}
+.uno:hover{
+    background-color: #323639;
+}
+.dos:hover{
+    background-color: #323639;
+}
+.tres:hover{
+    background-color: #323639;
+}
+.punto:hover{
+    background-color: #323639;
+}
+.cero:hover{
+    background-color: #323639;
+}
+.resultado:hover{
+    background-color: #323639;
+}
+.dividir:hover{
+    background-color: #323639;
+}
+.menos:hover{
+    background-color: #323639;
+}
+.multiplicar:hover{
+    background-color: #323639;
+}
+.sumar:hover{
+    background-color: #323639;
 }
